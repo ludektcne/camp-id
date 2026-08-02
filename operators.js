@@ -117,7 +117,7 @@ const operators = {
     age:"",
     job:"Instruktor",
     place:"Pavlov",
-    photo:""
+    photo:"images/mirda.jpg"
 },
 
 "MC-014":{
@@ -147,7 +147,7 @@ const operators = {
     age:"",
     job:"Instruktor",
     place:"Pavlov",
-    photo:""
+    photo:"images/ludek.jpg"
 },
 
 "CRYSTAL-001":{
