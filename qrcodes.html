@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QR Kódy</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+<style>
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:white;
+    margin:20px;
+}
+
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.card{
+    width:180px;
+    border:1px solid #999;
+    border-radius:10px;
+    padding:10px;
+    text-align:center;
+}
+
+.name{
+    font-weight:bold;
+    margin-top:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>MC Special Forces - QR kódy</h2>
+
+<div class="container" id="cards"></div>
+
+<script>
+
+const list=[
+
+"MC-001",
+"MC-002",
+"MC-003",
+"MC-004",
+"MC-005",
+"MC-006",
+"MC-007",
+"MC-008",
+"MC-009",
+"MC-010",
+"MC-012",
+"MC-013",
+"MC-014",
+"MC-015",
+"MC-016",
+
+"CRYSTAL-001",
+"BIVOJ-001",
+"MSG-001"
+
+];
+
+const container=document.getElementById("cards");
+
+list.forEach(code=>{
+
+let card=document.createElement("div");
+card.className="card";
+
+let qr=document.createElement("div");
+
+card.appendChild(qr);
+
+new QRCode(qr,{
+text:code,
+width:140,
+height:140
+});
+
+let txt=document.createElement("div");
+txt.className="name";
+txt.innerHTML=code;
+
+card.appendChild(txt);
+
+container.appendChild(card);
+
+});
+
+</script>
+
+</body>
+</html>
