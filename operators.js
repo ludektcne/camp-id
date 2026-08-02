@@ -103,7 +103,7 @@ const operators = {
 "MC-011":{
     number:"011",
     name:"Bivoj",
-    nickname:"",
+    nickname:"Maskot",
     age:"",
     job:"MC Special Forces Operator",
     place:"Pavlov",
@@ -172,6 +172,10 @@ const operators = {
 
 "CRYSTAL-001":{
     type:"crystal"
+},
+
+"BIVOJ-001":{
+    type:"bivoj"
 },
 
 "MSG-001":{
