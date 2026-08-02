@@ -100,6 +100,16 @@ const operators = {
     photo:""
 },
 
+"MC-011":{
+    number:"011",
+    name:"",
+    nickname:"",
+    age:"",
+    job:"MC Special Forces Operator",
+    place:"Pavlov",
+    photo:""
+},
+
 "MC-012":{
     number:"012",
     name:"Lukáš",
@@ -148,6 +158,16 @@ const operators = {
     job:"Instruktor",
     place:"Pavlov",
     photo:"images/ludek.jpg"
+},
+
+"MC-017":{
+    number:"017",
+    name:"Tazz",
+    nickname:"",
+    age:"",
+    job:"Instruktor",
+    place:"Pavlov",
+    photo:"images/tazz.jpg"
 },
 
 "CRYSTAL-001":{
