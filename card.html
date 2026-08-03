@@ -46,17 +46,23 @@ h1{
     font-size:36px;
     color:#d4af37;
     font-weight:bold;
-    margin-bottom:20px;
+    margin-bottom:15px;
 }
 
 #name{
     font-size:30px;
     font-weight:bold;
-    margin-bottom:20px;
+    margin-bottom:15px;
+}
+
+#job{
+    font-size:22px;
+    color:#d4af37;
+    margin-bottom:10px;
 }
 
 #info{
-    font-size:24px;
+    font-size:22px;
     margin-bottom:30px;
 }
 
@@ -72,7 +78,7 @@ button{
 }
 
 button:hover{
-    opacity:0.9;
+    opacity:.9;
 }
 
 </style>
@@ -85,16 +91,18 @@ button:hover{
 
 <h1>🛡 MC SPECIAL FORCES</h1>
 
-<img id="photo">
+<img id="photo" src="" alt="Fotografie operátora">
 
 <div id="number"></div>
 
 <div id="name"></div>
 
+<div id="job"></div>
+
 <div id="info"></div>
 
-<button onclick="history.back()">
-ZPĚT
+<button onclick="window.location.href='scanner.html'">
+DALŠÍ SKEN
 </button>
 
 </div>
@@ -103,26 +111,30 @@ ZPĚT
 
 const op = JSON.parse(sessionStorage.getItem("operator"));
 
-if(op){
+if(!op){
 
-    if(op.photo){
-        document.getElementById("photo").src = op.photo;
-        document.getElementById("photo").style.display = "block";
-    }
-
-    document.getElementById("number").innerHTML = "MC-" + op.number;
-
-    document.getElementById("name").innerHTML = op.name;
-
-    if(op.job == "Instruktor"){
-        document.getElementById("info").innerHTML = "INSTRUKTOR";
-    }else{
-        document.getElementById("info").innerHTML = op.age + " let";
-    }
+    document.body.innerHTML =
+    "<h2 style='margin-top:120px;text-align:center;color:white;'>Operátor nenalezen.</h2>";
 
 }else{
 
-    document.body.innerHTML = "<h1 style='text-align:center;margin-top:100px;color:white;'>Operátor nenalezen.</h1>";
+    document.getElementById("number").textContent = "MC-" + op.number;
+
+    document.getElementById("name").textContent = op.name;
+
+    document.getElementById("job").textContent = op.job;
+
+    if(op.photo && op.photo !== ""){
+        const img = document.getElementById("photo");
+        img.src = op.photo;
+        img.style.display = "block";
+    }
+
+    if(op.job === "Instruktor"){
+        document.getElementById("info").textContent = "INSTRUKTOR";
+    }else{
+        document.getElementById("info").textContent = op.age + " let";
+    }
 
 }
 
