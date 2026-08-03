@@ -1,173 +1,187 @@
 const operators = {
 
-"MC-001":{
-    number:"001",
-    name:"Beáta Hronová",
-    nickname:"",
-    age:5,
-    job:"MC Special Forces Operator",
-    place:"Pavlov",
-    photo:"images/beatka.jpg"
-},
+    "MC-001": {
+        number: "001",
+        name: "Beáta Hronová",
+        nickname: "",
+        age: 5,
+        job: "MC Special Forces Operator",
+        place: "Pavlov",
+        photo: "images/beatka.jpg"
+    },
 
-"MC-002":{
-    number:"002",
-    name:"Viola Nečasová",
-    nickname:"",
-    age:5,
-    job:"MC Special Forces Operator",
-    place:"Pavlov",
-    photo:"images/violka.jpg"
-},
+    "MC-002": {
+        number: "002",
+        name: "Viola Nečasová",
+        nickname: "",
+        age: 5,
+        job: "MC Special Forces Operator",
+        place: "Pavlov",
+        photo: "images/violka.jpg"
+    },
 
-"MC-003":{
-    number:"003",
-    name:"Jiří Bartoň",
-    nickname:"",
-    age:6,
-    job:"MC Special Forces Operator",
-    place:"Pavlov",
-    photo:"images/jirka.jpg"
-},
+    "MC-003": {
+        number: "003",
+        name: "Jiří Bartoň",
+        nickname: "",
+        age: 6,
+        job: "MC Special Forces Operator",
+        place: "Pavlov",
+        photo: "images/jirka.jpg"
+    },
 
-"MC-004":{
-    number:"004",
-    name:"Tomáš Severa",
-    nickname:"",
-    age:6,
-    job:"MC Special Forces Operator",
-    place:"Pavlov",
-    photo:"images/tomik.jpg"
-},
+    "MC-004": {
+        number: "004",
+        name: "Tomáš Severa",
+        nickname: "",
+        age: 6,
+        job: "MC Special Forces Operator",
+        place: "Pavlov",
+        photo: "images/tomik.jpg"
+    },
 
-"MC-005":{
-    number:"005",
-    name:"Sofie Hawerlandová",
-    nickname:"",
-    age:6,
-    job:"MC Special Forces Operator",
-    place:"Pavlov",
-    photo:"images/sofie.jpg"
-},
+    "MC-005": {
+        number: "005",
+        name: "Sofie Hawerlandová",
+        nickname: "",
+        age: 6,
+        job: "MC Special Forces Operator",
+        place: "Pavlov",
+        photo: "images/sofie.jpg"
+    },
 
-"MC-006":{
-    number:"006",
-    name:"Stela Nečasová",
-    nickname:"",
-    age:7,
-    job:"MC Special Forces Operator",
-    place:"Pavlov",
-    photo:"images/stela.jpg"
-},
+    "MC-006": {
+        number: "006",
+        name: "Stela Nečasová",
+        nickname: "",
+        age: 7,
+        job: "MC Special Forces Operator",
+        place: "Pavlov",
+        photo: "images/stela.jpg"
+    },
 
-"MC-007":{
-    number:"007",
-    name:"Evelína Dočekalová",
-    nickname:"",
-    age:8,
-    job:"MC Special Forces Operator",
-    place:"Pavlov",
-    photo:"images/evelinka.jpg"
-},
+    "MC-007": {
+        number: "007",
+        name: "Evelína Dočekalová",
+        nickname: "",
+        age: 8,
+        job: "MC Special Forces Operator",
+        place: "Pavlov",
+        photo: "images/evelinka.jpg"
+    },
 
-"MC-008":{
-    number:"008",
-    name:"Jan Dočekal",
-    nickname:"",
-    age:10,
-    job:"MC Special Forces Operator",
-    place:"Pavlov",
-    photo:"images/honzik.jpg"
-},
+    "MC-008": {
+        number: "008",
+        name: "Jan Dočekal",
+        nickname: "",
+        age: 10,
+        job: "MC Special Forces Operator",
+        place: "Pavlov",
+        photo: "images/honzik.jpg"
+    },
 
-"MC-009":{
-    number:"009",
-    name:"Tony Haberl",
-    nickname:"",
-    age:11,
-    job:"MC Special Forces Operator",
-    place:"Pavlov",
-    photo:"images/tony.jpg"
-},
+    "MC-009": {
+        number: "009",
+        name: "Tony Haberl",
+        nickname: "",
+        age: 11,
+        job: "MC Special Forces Operator",
+        place: "Pavlov",
+        photo: "images/tony.jpg"
+    },
 
-"MC-010":{
-    number:"010",
-    name:"Jakub Dočekal",
-    nickname:"",
-    age:11,
-    job:"MC Special Forces Operator",
-    place:"Pavlov",
-    photo:"images/kuba.jpg"
-},
+    "MC-010": {
+        number: "010",
+        name: "Jakub Dočekal",
+        nickname: "",
+        age: 11,
+        job: "MC Special Forces Operator",
+        place: "Pavlov",
+        photo: "images/kuba.jpg"
+    },
 
-"MC-011":{
-    number:"011",
-    name:"Bivoj",
-    nickname:"Maskot",
-    age:"",
-    job:"MC Special Forces Operator",
-    place:"Pavlov",
-    photo:"images/bivoj.jpg"
-},
+    "MC-011": {
+        number: "011",
+        name: "Bivoj",
+        nickname: "Maskot",
+        age: "",
+        job: "MC Special Forces Operator",
+        place: "Pavlov",
+        photo: "images/bivoj.jpg"
+    },
 
-"MC-012":{
-    number:"012",
-    name:"Lukáš",
-    nickname:"",
-    age:8,
-    job:"MC Special Forces Operator",
-    place:"Pavlov",
-    photo:"images/lukas.jpg"
-},
+    "MC-012": {
+        number: "012",
+        name: "Lukáš",
+        nickname: "",
+        age: 8,
+        job: "MC Special Forces Operator",
+        place: "Pavlov",
+        photo: "images/lukas.jpg"
+    },
 
-"MC-013":{
-    number:"013",
-    name:"Mirda",
-    nickname:"",
-    age:"",
-    job:"Instruktor",
-    place:"Pavlov",
-    photo:"images/mirda.jpg"
-},
+    "MC-013": {
+        number: "013",
+        name: "Mirda",
+        nickname: "",
+        age: "",
+        job: "Instruktor",
+        place: "Pavlov",
+        photo: "images/mirda.jpg"
+    },
 
-"MC-014":{
-    number:"014",
-    name:"Kamča",
-    nickname:"",
-    age:"",
-    job:"Instruktor",
-    place:"Pavlov",
-    photo:"images/kamca.jpg"
-},
+    "MC-014": {
+        number: "014",
+        name: "Kamča",
+        nickname: "",
+        age: "",
+        job: "Instruktor",
+        place: "Pavlov",
+        photo: "images/kamca.jpg"
+    },
 
-"MC-015":{
-    number:"015",
-    name:"Anička",
-    nickname:"",
-    age:"",
-    job:"Instruktor",
-    place:"Pavlov",
-    photo:"images/anicka.jpg"
-},
+    "MC-015": {
+        number: "015",
+        name: "Anička",
+        nickname: "",
+        age: "",
+        job: "Instruktor",
+        place: "Pavlov",
+        photo: "images/anicka.jpg"
+    },
 
-"MC-016":{
-    number:"016",
-    name:"Luděk",
-    nickname:"",
-    age:"",
-    job:"Instruktor",
-    place:"Pavlov",
-    photo:"images/ludek.jpg"
-},
+    "MC-016": {
+        number: "016",
+        name: "Luděk",
+        nickname: "",
+        age: "",
+        job: "Instruktor",
+        place: "Pavlov",
+        photo: "images/ludek.jpg"
+    },
 
-"MC-017":{
-    number:"017",
-    name:"Tazz",
-    nickname:"",
-    age:"",
-    job:"Instruktor",
-    place:"Pavlov",
-    photo:"images/tazz.jpg"
-},
+    "MC-017": {
+        number: "017",
+        name: "Tazz",
+        nickname: "",
+        age: "",
+        job: "Instruktor",
+        place: "Pavlov",
+        photo: "images/tazz.jpg"
+    },
 
-"CRYSTAL-001
+    "CRYSTAL-001": {
+        type: "crystal"
+    },
+
+    "BIVOJ-001": {
+        type: "bivoj"
+    },
+
+    "MSG-001": {
+        type: "message"
+    }
+
+};
+
+window.operators = operators;
