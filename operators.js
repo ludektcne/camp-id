@@ -7,7 +7,7 @@ const operators = {
     age:5,
     job:"MC Special Forces Operator",
     place:"Pavlov",
-    photo:""
+    photo:"images/beatka.jpg"
 },
 
 "MC-002":{
@@ -17,7 +17,7 @@ const operators = {
     age:5,
     job:"MC Special Forces Operator",
     place:"Pavlov",
-    photo:""
+    photo:"images/violka.jpg"
 },
 
 "MC-003":{
@@ -27,7 +27,7 @@ const operators = {
     age:6,
     job:"MC Special Forces Operator",
     place:"Pavlov",
-    photo:""
+    photo:"images/jirka.jpg"
 },
 
 "MC-004":{
@@ -37,7 +37,7 @@ const operators = {
     age:6,
     job:"MC Special Forces Operator",
     place:"Pavlov",
-    photo:""
+    photo:"images/tomik.jpg"
 },
 
 "MC-005":{
@@ -47,7 +47,7 @@ const operators = {
     age:6,
     job:"MC Special Forces Operator",
     place:"Pavlov",
-    photo:""
+    photo:"images/sofie.jpg"
 },
 
 "MC-006":{
@@ -57,7 +57,7 @@ const operators = {
     age:7,
     job:"MC Special Forces Operator",
     place:"Pavlov",
-    photo:""
+    photo:"images/stela.jpg"
 },
 
 "MC-007":{
@@ -67,7 +67,7 @@ const operators = {
     age:8,
     job:"MC Special Forces Operator",
     place:"Pavlov",
-    photo:""
+    photo:"images/evelinka.jpg"
 },
 
 "MC-008":{
@@ -77,7 +77,7 @@ const operators = {
     age:10,
     job:"MC Special Forces Operator",
     place:"Pavlov",
-    photo:""
+    photo:"images/honzik.jpg"
 },
 
 "MC-009":{
@@ -87,7 +87,7 @@ const operators = {
     age:11,
     job:"MC Special Forces Operator",
     place:"Pavlov",
-    photo:""
+    photo:"images/tony.jpg"
 },
 
 "MC-010":{
@@ -97,7 +97,7 @@ const operators = {
     age:11,
     job:"MC Special Forces Operator",
     place:"Pavlov",
-    photo:""
+    photo:"images/kuba.jpg"
 },
 
 "MC-011":{
@@ -117,7 +117,7 @@ const operators = {
     age:8,
     job:"MC Special Forces Operator",
     place:"Pavlov",
-    photo:""
+    photo:"images/lukas.jpg"
 },
 
 "MC-013":{
@@ -137,7 +137,7 @@ const operators = {
     age:"",
     job:"Instruktor",
     place:"Pavlov",
-    photo:""
+    photo:"images/kamca.jpg"
 },
 
 "MC-015":{
@@ -147,7 +147,7 @@ const operators = {
     age:"",
     job:"Instruktor",
     place:"Pavlov",
-    photo:""
+    photo:"images/anicka.jpg"
 },
 
 "MC-016":{
@@ -170,16 +170,4 @@ const operators = {
     photo:"images/tazz.jpg"
 },
 
-"CRYSTAL-001":{
-    type:"crystal"
-},
-
-"BIVOJ-001":{
-    type:"bivoj"
-},
-
-"MSG-001":{
-    type:"message"
-}
-
-};
+"CRYSTAL-001
