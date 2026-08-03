@@ -9,7 +9,6 @@
 <script src="operators.js"></script>
 
 <style>
-
 body{
     margin:0;
     background:#111;
@@ -17,25 +16,22 @@ body{
     font-family:Arial,Helvetica,sans-serif;
     text-align:center;
 }
-
 h2{
     color:#d4af37;
     margin-top:20px;
 }
-
 #reader{
-    width:100%;
-    max-width:420px;
-    margin:25px auto;
+    width:350px;
+    margin:auto;
+    margin-top:30px;
 }
-
 </style>
 
 </head>
 
 <body>
 
-<h2>Naskenuj QR kód</h2>
+<h2>Naskenuj QR</h2>
 
 <div id="reader"></div>
 
@@ -45,67 +41,55 @@ function onScanSuccess(decodedText){
 
     decodedText = decodedText.trim();
 
-    html5QrCode.stop().then(()=>{
+    const op = operators[decodedText];
 
-        const op = operators[decodedText];
+    if(!op){
+        alert("Operátor nenalezen.");
+        return;
+    }
 
-        if(!op){
-            alert("Operátor nenalezen");
-            html5QrCode.start(cameraConfig,scannerConfig,onScanSuccess);
-            return;
-        }
+    if(op.type==="crystal"){
+        alert("💎 KRYSTAL AKTIVOVÁN");
+        return;
+    }
 
-        if(op.type==="crystal"){
-            alert("💎 KRYSTAL AKTIVOVÁN");
-            html5QrCode.start(cameraConfig,scannerConfig,onScanSuccess);
-            return;
-        }
+    if(op.type==="message"){
+        alert("📜 ZPRÁVA OD BIVOJE");
+        return;
+    }
 
-        if(op.type==="bivoj"){
-            alert("🧸 BIVOJ JE NALEZEN");
-            html5QrCode.start(cameraConfig,scannerConfig,onScanSuccess);
-            return;
-        }
+    if(op.type==="bivoj"){
+        alert("🧸 BIVOJ JE NALEZEN");
+        return;
+    }
 
-        if(op.type==="message"){
-            alert("📜 ZPRÁVA OD BIVOJE");
-            html5QrCode.start(cameraConfig,scannerConfig,onScanSuccess);
-            return;
-        }
+    sessionStorage.setItem("operator",JSON.stringify(op));
 
-        sessionStorage.setItem("operator",JSON.stringify(op));
-
-        window.location.href="card.html";
-
-    });
+    window.location.href="card.html";
 
 }
 
-const cameraConfig={
-    facingMode:"environment"
-};
+const html5QrCode = new Html5Qrcode("reader");
 
-const scannerConfig={
-    fps:20,
-    qrbox:{
-        width:300,
-        height:300
-    },
-    aspectRatio:1.0,
-    rememberLastUsedCamera:true
-};
+Html5Qrcode.getCameras().then(devices=>{
 
-const html5QrCode=new Html5Qrcode("reader");
+    if(devices.length===0){
+        alert("Nebyla nalezena kamera.");
+        return;
+    }
 
-html5QrCode
-.start(
-    cameraConfig,
-    scannerConfig,
-    onScanSuccess
-)
-.catch(err=>{
-    alert("Nepodařilo se spustit kameru.");
+    html5QrCode.start(
+        devices[0].id,
+        {
+            fps:10,
+            qrbox:250
+        },
+        onScanSuccess
+    );
+
+}).catch(err=>{
     console.error(err);
+    alert("Chyba kamery.");
 });
 
 </script>
